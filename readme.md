@@ -13,7 +13,7 @@ $ npm install --save robo-talk
 ## Usage
 
 ```js
-const robotalk = require('robot-talk');
+const robotalk = require('robo-talk');
 
 robotalk.encode('unicorns & rainbows');
 //=> 'Beeep Beeep Beeeeep. Beeep Beeep Bip. Beeep Bip Booop. Bopp Bopp. Beeep Beeep Beeep. Beeep Beeep Boop. Beeep Beeep Bip. Beeep Beeep Booop. Beeeep Bop. Beeeep Boooop. Beeeep Bop. Beeep Beeep Boop. Bopp Beeeeep. Beeep Bip Booop. Beeep Beeep Bip. Bopp Boooop. Beeep Beeep Beeep. Beeep Beeep Bopp. Beeep Beeep Booop'
