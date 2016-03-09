@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "description": "Encode / decode your human messages into something any robot would understand.",
   "license": "MIT",
-  "repository": "radiovisual/robot-talk",
+  "repository": "radiovisual/robo-talk",
   "author": {
     "name": "Michael Wuergler",
     "email": "wuergler@gmail.com",
