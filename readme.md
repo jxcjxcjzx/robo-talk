@@ -13,12 +13,23 @@ $ npm install --save robot-talk
 ## Usage
 
 ```js
-const robotTalk = require('robot-talk');
+const botSpeak = require('robot-talk');
 
-robotTalk('unicorns');
-//=> 'unicorns & rainbows'
+botSpeak.encode('unicorns & rainbows');
+//=> 'Beeep Beeep Beeeeep. Beeep Beeep Bip. Beeep Bip Booop. Bopp Bopp. Beeep Beeep Beeep. Beeep Beeep Boop. Beeep Beeep Bip. Beeep Beeep Booop. Beeeep Bop. Beeeep Boooop. Beeeep Bop. Beeep Beeep Boop. Bopp Beeeeep. Beeep Bip Booop. Beeep Beeep Bip. Bopp Boooop. Beeep Beeep Beeep. Beeep Beeep Bopp. Beeep Beeep Booop'
+
+botSpeak.decode('Beeep Beeep Beeeeep. Beeep Beeep Bip. Beeep Bip Booop. Bopp Bopp. Beeep Beeep Beeep. Beeep Beeep Boop. Beeep Beeep Bip. Beeep Beeep Booop. Beeeep Bop. Beeeep Boooop. Beeeep Bop. Beeep Beeep Boop. Bopp Beeeeep. Beeep Bip Booop. Beeep Beeep Bip. Bopp Boooop. Beeep Beeep Beeep. Beeep Beeep Bopp. Beeep Beeep Booop');
+//=> unicorns & rainbows
 ```
 
+## Special Character Support
+
+botSpeak can encode and decode special characters, so have some fun with your messages!
+
+```js
+botSpeak.encode('🍕 + 🍺');
+//=> 'Booop Booop Beeeep Booop Blipp. Booop Beeeeep Beeep Beeeeep Beeeep. Beeeep Bop. Boop Beeeep. Beeeep Bop. Booop Booop Beeeep Booop Blipp. Booop Beeeeep Bop Beeep Bip'
+```
 
 ## API
 
