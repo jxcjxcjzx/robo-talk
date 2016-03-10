@@ -33,7 +33,7 @@ robotalk.encode('🍕 + 🍺');
 
 ## API
 
-### `robotTalk.encode(text)`
+### `robotalk.encode(text)`
 
 #### text
 
@@ -41,7 +41,7 @@ Type: `String`
 
 Encode your human message into robot talk.
 
-### `robotTalk.decode(text)`
+### `robotalk.decode(text)`
 
 #### text
 
