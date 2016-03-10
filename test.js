@@ -2,9 +2,21 @@ import test from 'ava';
 const fn = require('./');
 
 test('api', t => {
-	t.is(typeof fn, 'object');
+	t.true(typeof fn === 'object');
 	t.is(typeof fn.encode('a'), 'string');
 	t.is(typeof fn.decode('beep'), 'string');
+});
+
+test('encode expects a string', t => {
+	t.throws(() => {
+		fn.encode([]);
+	}, 'robo-talk expects a string');
+});
+
+test('decode expects a string', t => {
+	t.throws(() => {
+		fn.decode([]);
+	}, 'robo-talk expects a string');
 });
 
 test('should encode values', t => {
