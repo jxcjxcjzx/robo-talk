@@ -1,10 +1,10 @@
 'use strict';
+var throwif = require('throwif');
+
 var beeps = ['Bip', 'Beeep', 'Bop', 'Beeeep', 'Boop', 'Booop', 'Blipp', 'Beeeeep', 'Boooop', 'Bopp'];
 
 module.exports.encode = function (text) {
-	if (typeof text !== 'string') {
-		throw new TypeError('robo-talk expects a string');
-	}
+	throwif(text, '!== string');
 	var output = [];
 
 	for (var char in text) {
@@ -23,9 +23,7 @@ module.exports.encode = function (text) {
 };
 
 module.exports.decode = function (text) {
-	if (typeof text !== 'string') {
-		throw new TypeError('robo-talk expects a string');
-	}
+	throwif(text, '!== string');
 	var output = [];
 
 	var encoded = text.split('. ');

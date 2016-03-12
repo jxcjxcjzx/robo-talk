@@ -10,13 +10,13 @@ test('api', t => {
 test('encode expects a string', t => {
 	t.throws(() => {
 		fn.encode([]);
-	}, 'robo-talk expects a string');
+	}, 'Expected a string');
 });
 
 test('decode expects a string', t => {
 	t.throws(() => {
 		fn.decode([]);
-	}, 'robo-talk expects a string');
+	}, 'Expected a string');
 });
 
 test('should encode values', t => {
