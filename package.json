@@ -1,6 +1,6 @@
 {
   "name": "robo-talk",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Encode / decode your human messages into something any robot would understand.",
   "license": "MIT",
   "repository": "radiovisual/robo-talk",
