@@ -30,7 +30,7 @@
     "hidden"
   ],
   "dependencies": {
-    "throwif": "0.0.1"
+    "throwif": "0.0.2"
   },
   "devDependencies": {
     "ava": "^0.8.0",
